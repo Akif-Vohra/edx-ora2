@@ -1,0 +1,11 @@
+Different tags in source and translation
+  msgid:                                      All submitted peer responses have
+         been assessed. Check back later to see if more learners have submitted
+         responses. You still need to complete the %(start_link)speer
+         assessment%(end_link)s step.
+  ----->  Alle eingereichten Partnerbewertungen wurden bearbeitet. Kommen Sie
+         später nochmal auf diese Seite um zu schauen, ob weitere Teilnehmer
+         eine Bewertung abgegeben haben. Sie müssen noch die
+         %(start_link)sPartnerbewertung (end_link)s abschließen.
+  -----> "%(end_link)s" missing
+

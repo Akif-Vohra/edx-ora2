@@ -1,0 +1,5 @@
+Different tags in source and translation
+  msgid: Training scheduled with new Workflow UUID: {uuid}
+  -----> 训练安排了新工作流UUID：{UUID}
+  -----> "{uuid}" vs "{UUID}"
+
