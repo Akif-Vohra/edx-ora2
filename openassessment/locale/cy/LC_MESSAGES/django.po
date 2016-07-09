@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-20 18:43+0000\n"
-"PO-Revision-Date: 2016-04-20 18:56+0000\n"
+"PO-Revision-Date: 2016-05-09 11:25+0000\n"
 "Last-Translator: Eric Fischer <efischer@edx.org>\n"
 "Language-Team: Welsh (http://www.transifex.com/open-edx/edx-platform/language/cy/)\n"
 "MIME-Version: 1.0\n"
@@ -118,7 +118,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:108
 #: openassessment/templates/openassessmentblock/edit/oa_edit_criterion.html:54
 msgid "None"
-msgstr ""
+msgstr "Dimbyd"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:109
 msgid "Image File"

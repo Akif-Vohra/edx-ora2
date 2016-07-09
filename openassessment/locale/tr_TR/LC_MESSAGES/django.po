@@ -14,13 +14,14 @@
 # Kubilay <kubilayinceoren10@gmail.com>, 2015
 # msare <mervesareakin@gmail.com>, 2014
 # serd@r <ser.ince@yahoo.com.tr>, 2015
+# Tevfik Bagcivan <tevfik.bagcivan@gmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-20 18:43+0000\n"
-"PO-Revision-Date: 2016-04-20 18:56+0000\n"
-"Last-Translator: Eric Fischer <efischer@edx.org>\n"
+"PO-Revision-Date: 2016-05-11 08:16+0000\n"
+"Last-Translator: Tevfik Bagcivan <tevfik.bagcivan@gmail.com>\n"
 "Language-Team: Turkish (Turkey) (http://www.transifex.com/open-edx/edx-platform/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -442,7 +443,7 @@ msgstr "Bütün öz değerlendirmelerin tamamlanmak zorunda olduğu tarih ve zam
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit_staff_assessment.html:8
 msgid "Step: Staff Assessment"
-msgstr ""
+msgstr "Personel Değerlendirme Aşaması"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit_staff_assessment.html:12
 msgid ""
@@ -559,7 +560,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_complete.html:34
 msgid "Your Upload"
-msgstr ""
+msgstr "Yükleyiniz"
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_complete.html:39
 msgid "Assessments of Your Response"
@@ -639,7 +640,7 @@ msgstr "Geri bildiriminizi gönderemedik."
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_complete.html:190
 msgid "Submit feedback on peer assessments"
-msgstr ""
+msgstr "Kişi değerlendirme hakkında geri bildirim gönderin"
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_incomplete.html:9
 msgid "Not Completed"
@@ -724,7 +725,7 @@ msgstr "Not ve ödev detaylarınızı gözden geçiriniz."
 
 #: openassessment/templates/openassessmentblock/message/oa_message_incomplete.html:5
 msgid "Assignment in progress"
-msgstr ""
+msgstr "İşlem devam ediyor"
 
 #: openassessment/templates/openassessmentblock/message/oa_message_incomplete.html:11
 msgid ""
@@ -734,7 +735,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/message/oa_message_incomplete.html:13
 msgid "Complete the learner training step to move on."
-msgstr ""
+msgstr "Tamamlamak için öğrenci eğitimi bölümünü tamamlayınız."
 
 #: openassessment/templates/openassessmentblock/message/oa_message_incomplete.html:17
 #: openassessment/templates/openassessmentblock/message/oa_message_incomplete.html:35
@@ -933,7 +934,7 @@ msgstr "\n                                            Değerlendirmeler # %(num_
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_override_assessment.html:27
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info.html:46
 msgid "Associated File"
-msgstr ""
+msgstr "İlişkili Dosya"
 
 #: openassessment/templates/openassessmentblock/peer/oa_peer_assessment.html:86
 #: openassessment/templates/openassessmentblock/peer/oa_peer_turbo_mode.html:70
@@ -1106,7 +1107,7 @@ msgstr "İşleminizi kaydedemedik"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:103
 msgid "Save your progress"
-msgstr ""
+msgstr "İlerlemenizi Kaydedin"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:107
 msgid "Your Submission Status"
@@ -1114,15 +1115,15 @@ msgstr "Yükleme Durumunuz"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:114
 msgid "Preview in LaTeX"
-msgstr ""
+msgstr "Latex'de Önizleme"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:117
 msgid "Click to preview your submission in LaTeX"
-msgstr ""
+msgstr "Yüklemenizin Latex'teki önizlemesine tıklayınız"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:122
 msgid "Preview Response"
-msgstr ""
+msgstr "Cevabı önizle"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:136
 msgid "We could not submit your response"
@@ -1185,7 +1186,7 @@ msgstr "Tamamlanmış"
 #: openassessment/templates/openassessmentblock/response/oa_response_graded.html:28
 #: openassessment/templates/openassessmentblock/response/oa_response_submitted.html:49
 msgid "Your Uploaded File"
-msgstr ""
+msgstr "Dosyanız yüklendi"
 
 #: openassessment/templates/openassessmentblock/response/oa_response_submitted.html:23
 msgid "Your Response Has Been Submitted"
@@ -1227,7 +1228,7 @@ msgstr "Cevabını Değerlendir"
 
 #: openassessment/templates/openassessmentblock/self/oa_self_assessment.html:67
 msgid "Submit your assessment"
-msgstr ""
+msgstr "Değerlendirmeyi gönder"
 
 #: openassessment/templates/openassessmentblock/self/oa_self_closed.html:25
 msgid ""
@@ -1238,22 +1239,22 @@ msgstr "Bu adım şimdi kapandı. Artık kişisel değerlendirmeyi tamamlayamazs
 #: openassessment/templates/openassessmentblock/staff/oa_staff_grade.html:8
 #: openassessment/xblock/grade_mixin.py:337
 msgid "Staff Grade"
-msgstr ""
+msgstr "Personel Derecesi"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:6
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:17
 msgid "Manage Individual Learners"
-msgstr ""
+msgstr "Bireysel Öğrencileri Yönet"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:7
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:89
 msgid "View Assignment Statistics"
-msgstr ""
+msgstr "Ödev İstatistiklerini Görüntüle"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:9
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:171
 msgid "Grade Available Responses"
-msgstr ""
+msgstr "Ödev Yanıtları"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:15
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:87
@@ -1345,7 +1346,7 @@ msgstr "N/A"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_grade_learners.html:7
 msgid "Staff Assessment"
-msgstr ""
+msgstr "Personel Değerlendirme"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_grade_learners_assessment.html:7
 msgid "Give this learner a grade using the problem's rubric."

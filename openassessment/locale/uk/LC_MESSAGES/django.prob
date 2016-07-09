@@ -1,0 +1,25 @@
+Different tags in source and translation
+  msgid: Example {example_number} has a validation error: {error}
+  -----> Приклад {приклад_номер} має помилки перевірки: {помилка}
+  -----> "{example_number}", "{error}" vs "{приклад_номер}", "{помилка}"
+
+Different tags in source and translation
+  msgid: Example {example_number} has an invalid option for "{criterion_name}":
+         "{option_name}"
+  -----> Приклад {приклад_номер} має неприпустиме варіант для
+         "{ім'я_критерій}": "{ім'я _опції}"
+  -----> "{example_number}", "{option_name}", "{criterion_name}" vs
+         "{ім'я_критерій}", "{приклад_номер}", "{ім'я _опції}"
+
+Different tags in source and translation
+  msgid: Example {example_number} has an extra option for "{criterion_name}"
+  -----> Приклад {приклад_номер} додаткова опція для "{ім'я_критерій}"
+  -----> "{example_number}", "{criterion_name}" vs "{ім'я_критерій}",
+         "{приклад_номер}"
+
+Different tags in source and translation
+  msgid: Example {example_number} is missing an option for "{criterion_name}"
+  -----> Приклад {приклад_номер} відсутня можливість для "{ім'я_критерій}"
+  -----> "{example_number}", "{criterion_name}" vs "{ім'я_критерій}",
+         "{приклад_номер}"
+

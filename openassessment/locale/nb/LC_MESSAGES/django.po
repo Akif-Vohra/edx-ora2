@@ -12,7 +12,7 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-20 18:43+0000\n"
-"PO-Revision-Date: 2016-04-20 18:56+0000\n"
+"PO-Revision-Date: 2016-05-09 11:27+0000\n"
 "Last-Translator: Eric Fischer <efischer@edx.org>\n"
 "Language-Team: Norwegian Bokmål (http://www.transifex.com/open-edx/edx-platform/language/nb/)\n"
 "MIME-Version: 1.0\n"
@@ -51,7 +51,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:12
 msgid "Open Response Assessment"
-msgstr ""
+msgstr "Fritekstvurdering"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:14
 msgid "Settings"
@@ -59,7 +59,7 @@ msgstr "Innstillinger"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:15
 msgid "Rubric"
-msgstr ""
+msgstr "Rubrikk"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:16
 #: openassessment/templates/openassessmentblock/edit/oa_edit_prompt.html:7
@@ -334,7 +334,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/edit/oa_edit_peer_assessment.html:36
 #: openassessment/templates/openassessmentblock/edit/oa_edit_self_assessment.html:22
 msgid "Start Date"
-msgstr ""
+msgstr "Startdato"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit_peer_assessment.html:45
 #: openassessment/templates/openassessmentblock/edit/oa_edit_self_assessment.html:31
@@ -350,7 +350,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/edit/oa_edit_self_assessment.html:43
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:137
 msgid "Due Date"
-msgstr ""
+msgstr "Tidsfrist"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit_peer_assessment.html:66
 #: openassessment/templates/openassessmentblock/edit/oa_edit_self_assessment.html:52
@@ -469,11 +469,11 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/edit/oa_training_example.html:27
 msgid "Response"
-msgstr ""
+msgstr "Svar"
 
 #: openassessment/templates/openassessmentblock/edit/oa_training_example_criterion.html:10
 msgid "Not Selected"
-msgstr ""
+msgstr "Ikke valgt"
 
 #: openassessment/templates/openassessmentblock/edit/oa_training_example_criterion.html:15
 #: openassessment/templates/openassessmentblock/oa_rubric.html:35
@@ -968,7 +968,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/peer/oa_peer_complete.html:14
 msgid "Completed"
-msgstr ""
+msgstr "Ferdig"
 
 #: openassessment/templates/openassessmentblock/peer/oa_peer_complete.html:25
 #: openassessment/templates/openassessmentblock/peer/oa_peer_turbo_mode.html:33
@@ -1045,7 +1045,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/self/oa_self_assessment.html:31
 #: openassessment/templates/openassessmentblock/student_training/student_training.html:32
 msgid "In Progress"
-msgstr ""
+msgstr "Pågår"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:42
 msgid "Enter your response to the question."
@@ -1253,7 +1253,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:87
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:169
 msgid "Close"
-msgstr ""
+msgstr "Lukk"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:26
 msgid "Enter an individual learner's username or email"
@@ -1367,7 +1367,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_grade_learners_assessment.html:47
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_override_assessment.html:46
 msgid "Submit assessment"
-msgstr ""
+msgstr "Lever oppgave"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_grade_learners_assessment.html:53
 msgid "Submit assessment and continue grading"
@@ -1549,7 +1549,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info_assessment_detail.html:25
 msgid "Feedback"
-msgstr ""
+msgstr "Tilbakemelding"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info_assessment_detail.html:27
 msgid "Points Possible"
@@ -1653,7 +1653,7 @@ msgstr ""
 #: openassessment/xblock/student_training_mixin.py:55
 #: openassessment/xblock/student_training_mixin.py:203
 msgid "An unexpected error occurred."
-msgstr ""
+msgstr "Det har oppstått en uventet feil"
 
 #: openassessment/xblock/grade_mixin.py:165
 msgid "Peer Assessment"
@@ -1661,15 +1661,15 @@ msgstr "Hverandrevurdering"
 
 #: openassessment/xblock/grade_mixin.py:167
 msgid "Self Assessment"
-msgstr ""
+msgstr "Egenevaluering"
 
 #: openassessment/xblock/grade_mixin.py:200
 msgid "Assessment feedback could not be saved."
-msgstr ""
+msgstr "Fremdriftsvurdering kunne ikke bli lagret"
 
 #: openassessment/xblock/grade_mixin.py:211
 msgid "Feedback saved."
-msgstr ""
+msgstr "Tilbakemelding lagret"
 
 #: openassessment/xblock/grade_mixin.py:338
 #: openassessment/xblock/grade_mixin.py:486
@@ -1716,7 +1716,7 @@ msgstr ""
 
 #: openassessment/xblock/grade_mixin.py:498
 msgid "Peer"
-msgstr ""
+msgstr "Likemann"
 
 #: openassessment/xblock/peer_assessment_mixin.py:56
 msgid "You must submit a response before you can perform a peer assessment."
@@ -1726,21 +1726,21 @@ msgstr ""
 msgid ""
 "This feedback has already been submitted or the submission has been "
 "cancelled."
-msgstr ""
+msgstr "Denne tilbakemeldingen har allerede blitt levert eller innleveringen har blitt kansellert"
 
 #: openassessment/xblock/peer_assessment_mixin.py:95
 #: openassessment/xblock/peer_assessment_mixin.py:100
 msgid "Your peer assessment could not be submitted."
-msgstr ""
+msgstr "Din vurdering av medstudenter kunne ikke bli levert"
 
 #: openassessment/xblock/peer_assessment_mixin.py:114
 #: openassessment/xblock/student_training_mixin.py:209
 msgid "Could not update workflow status."
-msgstr ""
+msgstr "Kunne ikke oppdatere arbeidsflyt status"
 
 #: openassessment/xblock/peer_assessment_mixin.py:123
 msgid "Could not load peer assessment."
-msgstr ""
+msgstr "Kunne ikke lade medstudent vurdering"
 
 #: openassessment/xblock/peer_assessment_mixin.py:201
 msgid "Submit your assessment and review another response"
@@ -1758,7 +1758,7 @@ msgstr ""
 msgid ""
 "'{date}' is an invalid date format. Make sure the date is formatted as YYYY-"
 "MM-DDTHH:MM:SS."
-msgstr ""
+msgstr "'{date}' er ikke gyldig form som dato. Bruk: YYYY-MM-DDTHH:MM:SS."
 
 #: openassessment/xblock/resolve_dates.py:52
 msgid "'{date}' must be a date string or datetime"
@@ -1946,7 +1946,7 @@ msgstr ""
 
 #: openassessment/xblock/submission_mixin.py:181
 msgid "This response could not be saved."
-msgstr ""
+msgstr "Dette svaret kunne ikke bli lagret."
 
 #: openassessment/xblock/submission_mixin.py:185
 msgid "This response was not submitted."
@@ -1978,11 +1978,11 @@ msgstr ""
 
 #: openassessment/xblock/submission_mixin.py:342
 msgid "This response has been saved but not submitted."
-msgstr ""
+msgstr "Svaret har blitt lagret men ikke innlevert."
 
 #: openassessment/xblock/submission_mixin.py:343
 msgid "This response has not been saved."
-msgstr ""
+msgstr "Dette svaret har ikke blitt lagret."
 
 #: openassessment/xblock/validation.py:121
 msgid "This problem must include at least one assessment."

@@ -1,0 +1,5 @@
+Different tags in source and translation
+  msgid: Example {example_number} has a validation error: {error}
+  -----> 例如{示例_数字}有一个确定的错误：{错误}
+  -----> "{example_number}", "{error}" vs "{示例_数字}", "{错误}"
+

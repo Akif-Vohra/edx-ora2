@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-20 18:43+0000\n"
-"PO-Revision-Date: 2016-04-20 18:56+0000\n"
+"PO-Revision-Date: 2016-05-09 11:27+0000\n"
 "Last-Translator: Eric Fischer <efischer@edx.org>\n"
 "Language-Team: Urdu (http://www.transifex.com/open-edx/edx-platform/language/ur/)\n"
 "MIME-Version: 1.0\n"
@@ -118,7 +118,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:108
 #: openassessment/templates/openassessmentblock/edit/oa_edit_criterion.html:54
 msgid "None"
-msgstr ""
+msgstr "کوئی بھی نہیں"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:109
 msgid "Image File"
@@ -203,11 +203,11 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:179
 msgid "Save"
-msgstr ""
+msgstr "مخفوظ"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:183
 msgid "Cancel"
-msgstr ""
+msgstr "نھیں"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit_criterion.html:6
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info.html:100
@@ -224,7 +224,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/edit/oa_edit_prompt.html:10
 #: openassessment/templates/openassessmentblock/edit/oa_training_example.html:10
 msgid "Remove"
-msgstr ""
+msgstr "ہٹا دیں "
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit_criterion.html:17
 msgid "Criterion Name"
@@ -1249,7 +1249,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:87
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:169
 msgid "Close"
-msgstr ""
+msgstr "بند کریں"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:26
 msgid "Enter an individual learner's username or email"
@@ -1257,7 +1257,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:29
 msgid "Submit"
-msgstr ""
+msgstr "Paish karna"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:40
 msgid "Classifier set"
@@ -1363,7 +1363,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_grade_learners_assessment.html:47
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_override_assessment.html:46
 msgid "Submit assessment"
-msgstr ""
+msgstr "Faisla paish karna"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_grade_learners_assessment.html:53
 msgid "Submit assessment and continue grading"

@@ -15,18 +15,20 @@
 # lukassem <lucas_sem@hotmail.com>, 2014
 # Mariana Baroni <maribaroni@gmail.com>, 2014
 # Mariana Jó de Souza <mariana.jsouza@gmail.com>, 2015
+# Matheus Gomes Correia <matheus.gomes03@hotmail.com>, 2016
 # Monica Farias <monifar.tp@gmail.com>, 2015-2016
 # Pitty Bull <pitty.2000@gmail.com>, 2014
 # Renata Barboza-Murray, 2015
 # Ricardo Pietrobon <pietr007@gmail.com>, 2014
 # William Bellinazo Roca <williambr_1331@hotmail.com>, 2016
+# Willian Efaanz <willianpascoal@protonmail.com>, 2016
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-20 18:43+0000\n"
-"PO-Revision-Date: 2016-04-20 19:00+0000\n"
-"Last-Translator: Eric Fischer <efischer@edx.org>\n"
+"PO-Revision-Date: 2016-05-11 18:32+0000\n"
+"Last-Translator: Willian Efaanz <willianpascoal@protonmail.com>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/open-edx/edx-platform/language/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1424,7 +1426,7 @@ msgid ""
 "\n"
 "                            Learner submission removed by %(removed_by_username)s on %(removed_datetime)s\n"
 "                        "
-msgstr ""
+msgstr "\n                            Envio do aluno removido por %(removed_by_username)s em %(removed_datetime)s\n                        "
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info.html:30
 #, python-format
@@ -1432,7 +1434,7 @@ msgid ""
 "\n"
 "                            Learner submission removed on %(removed_datetime)s\n"
 "                        "
-msgstr ""
+msgstr "\n                            Envio do aluno removido em %(removed_datetime)s\n                        "
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info.html:37
 #, python-format
@@ -1440,7 +1442,7 @@ msgid ""
 "\n"
 "                        Comments: %(comments)s\n"
 "                    "
-msgstr ""
+msgstr "\nComentários: %(comments)s\n                    "
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info.html:54
 msgid "Peer Assessments for This Learner"
@@ -1472,7 +1474,7 @@ msgid ""
 "\n"
 "                            Final grade: %(points_earned)s out of %(points_possible)s\n"
 "                        "
-msgstr ""
+msgstr "\n                            Nota final: %(points_earned)s de %(points_possible)s\n                        "
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info.html:97
 msgid "Final Grade Details"
@@ -1488,12 +1490,12 @@ msgid_plural ""
 "\n"
 "                                        %(assessment_label)s - %(points)s points\n"
 "                                    "
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "\n%(assessment_label)s - %(points)s ponto"
+msgstr[1] "\n%(assessment_label)s - %(points)s pontos"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info.html:132
 msgid "Feedback Recorded"
-msgstr ""
+msgstr "Feedback gravado"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info.html:142
 msgid "The submission is waiting for assessments."
@@ -1550,11 +1552,11 @@ msgid ""
 "\n"
 "                            Assessment %(assessment_num)s:\n"
 "                        "
-msgstr ""
+msgstr "\nAvaliação %(assessment_num)s:"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info_assessment_detail.html:20
 msgid "Assessment Details"
-msgstr ""
+msgstr "Detalhes da Avaliação"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info_assessment_detail.html:24
 msgid "Selected Option"
@@ -1700,7 +1702,7 @@ msgstr "Colega {peer_index}"
 
 #: openassessment/xblock/grade_mixin.py:350
 msgid "Peer Comments"
-msgstr ""
+msgstr "Comentários dos colegas"
 
 #: openassessment/xblock/grade_mixin.py:360
 msgid "Example-Based Grade"
@@ -1708,7 +1710,7 @@ msgstr "Nota Baseada em Exemplos"
 
 #: openassessment/xblock/grade_mixin.py:360
 msgid "Example-Based Comments"
-msgstr ""
+msgstr "Comentários Baseados em Exemplos"
 
 #: openassessment/xblock/grade_mixin.py:363
 msgid "Self Assessment Grade"

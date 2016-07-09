@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-20 18:43+0000\n"
-"PO-Revision-Date: 2016-04-20 18:56+0000\n"
+"PO-Revision-Date: 2016-05-09 11:27+0000\n"
 "Last-Translator: Eric Fischer <efischer@edx.org>\n"
 "Language-Team: Basque (Spain) (http://www.transifex.com/open-edx/edx-platform/language/eu_ES/)\n"
 "MIME-Version: 1.0\n"
@@ -504,7 +504,7 @@ msgstr[1] ""
 #: openassessment/templates/openassessmentblock/grade/oa_assessment_title.html:27
 #, python-format
 msgid "More information about %(name)s"
-msgstr ""
+msgstr "Iinformazio gehiago %(name)s -ri buruz"
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_cancelled.html:7
 #: openassessment/templates/openassessmentblock/grade/oa_grade_complete.html:8
@@ -1048,7 +1048,7 @@ msgstr "Lanean"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:42
 msgid "Enter your response to the question."
-msgstr ""
+msgstr "Idatzi galderaren erantzuna"
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:44
 msgid ""
@@ -1075,7 +1075,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:69
 msgid "Enter your response to the question above."
-msgstr ""
+msgstr "Idatzi galderaren erantzuna behean."
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:79
 msgid "We could not upload this file"
@@ -1091,7 +1091,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:92
 msgid "You may continue to work on your response until you submit it."
-msgstr ""
+msgstr "Zure erantzunean lanean jarrai dezakezu bidali arte."
 
 #: openassessment/templates/openassessmentblock/response/oa_response.html:96
 msgid "We could not save your progress"
@@ -1252,7 +1252,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:87
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:169
 msgid "Close"
-msgstr ""
+msgstr "Itxi"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:26
 msgid "Enter an individual learner's username or email"
@@ -1366,7 +1366,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_grade_learners_assessment.html:47
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_override_assessment.html:46
 msgid "Submit assessment"
-msgstr ""
+msgstr "Bidali ebaluazioa"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_grade_learners_assessment.html:53
 msgid "Submit assessment and continue grading"
@@ -1426,7 +1426,7 @@ msgid ""
 "\n"
 "                        Comments: %(comments)s\n"
 "                    "
-msgstr ""
+msgstr "\n                        Iruzkinak: %(comments)s\n                    "
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info.html:54
 msgid "Peer Assessments for This Learner"

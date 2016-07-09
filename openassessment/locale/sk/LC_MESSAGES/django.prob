@@ -1,0 +1,25 @@
+Different tags in source and translation
+  msgid: Example {example_number} has a validation error: {error}
+  -----> Vzor {vzor_cislo} má nesprávnu hodnotu: {chyba}
+  -----> "{example_number}", "{error}" vs "{chyba}", "{vzor_cislo}"
+
+Different tags in source and translation
+  msgid: Example {example_number} has an invalid option for "{criterion_name}":
+         "{option_name}"
+  -----> Vzor {vzor_cislo} má nesprávnu voľbu pre "{kriterium_nazov}":
+         "{volba_nazov}"
+  -----> "{example_number}", "{option_name}", "{criterion_name}" vs
+         "{kriterium_nazov}", "{volba_nazov}", "{vzor_cislo}"
+
+Different tags in source and translation
+  msgid: Example {example_number} has an extra option for "{criterion_name}"
+  -----> Vzor {vzor_cislo} má možnosť naviac pre "{kriterium_nazov}"
+  -----> "{example_number}", "{criterion_name}" vs "{kriterium_nazov}",
+         "{vzor_cislo}"
+
+Different tags in source and translation
+  msgid: Example {example_number} is missing an option for "{criterion_name}"
+  -----> Vzor {vzor_cislo} chýba pre voľbu "{kriterium_nazov}"
+  -----> "{example_number}", "{criterion_name}" vs "{kriterium_nazov}",
+         "{vzor_cislo}"
+

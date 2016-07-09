@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-04-20 18:43+0000\n"
-"PO-Revision-Date: 2016-04-20 18:56+0000\n"
+"PO-Revision-Date: 2016-05-09 11:27+0000\n"
 "Last-Translator: Eric Fischer <efischer@edx.org>\n"
 "Language-Team: Armenian (Armenia) (http://www.transifex.com/open-edx/edx-platform/language/hy_AM/)\n"
 "MIME-Version: 1.0\n"
@@ -52,11 +52,11 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:14
 msgid "Settings"
-msgstr ""
+msgstr "Կարգավորումներ"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:15
 msgid "Rubric"
-msgstr ""
+msgstr "Խորագիր"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:16
 #: openassessment/templates/openassessmentblock/edit/oa_edit_prompt.html:7
@@ -119,7 +119,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:108
 #: openassessment/templates/openassessmentblock/edit/oa_edit_criterion.html:54
 msgid "None"
-msgstr ""
+msgstr "Ոչ մեկը"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:109
 msgid "Image File"
@@ -204,11 +204,11 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:179
 msgid "Save"
-msgstr ""
+msgstr "Պահպանել"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit.html:183
 msgid "Cancel"
-msgstr ""
+msgstr "վերացնել"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit_criterion.html:6
 #: openassessment/templates/openassessmentblock/staff_area/oa_student_info.html:100
@@ -225,7 +225,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/edit/oa_edit_prompt.html:10
 #: openassessment/templates/openassessmentblock/edit/oa_training_example.html:10
 msgid "Remove"
-msgstr ""
+msgstr "հեռացնել"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit_criterion.html:17
 msgid "Criterion Name"
@@ -251,7 +251,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/oa_rubric.html:14
 #: openassessment/templates/openassessmentblock/student_training/student_training.html:92
 msgid "Required"
-msgstr ""
+msgstr "Պարտադիր է"
 
 #: openassessment/templates/openassessmentblock/edit/oa_edit_criterion.html:61
 msgid ""
@@ -466,11 +466,11 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/edit/oa_training_example.html:27
 msgid "Response"
-msgstr ""
+msgstr "Պատասխան"
 
 #: openassessment/templates/openassessmentblock/edit/oa_training_example_criterion.html:10
 msgid "Not Selected"
-msgstr ""
+msgstr "Ընտրված չէ"
 
 #: openassessment/templates/openassessmentblock/edit/oa_training_example_criterion.html:15
 #: openassessment/templates/openassessmentblock/oa_rubric.html:35
@@ -642,7 +642,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_not_started.html:9
 msgid "Not Started"
-msgstr ""
+msgstr "Չսկսված"
 
 #: openassessment/templates/openassessmentblock/grade/oa_grade_not_started.html:19
 msgid "You have not started this problem yet."
@@ -817,11 +817,11 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/oa_base.html:34
 msgid "Loading"
-msgstr ""
+msgstr "Բեռնվում է"
 
 #: openassessment/templates/openassessmentblock/oa_rubric.html:44
 msgid "Comments"
-msgstr ""
+msgstr "Մեկնաբանություններ"
 
 #: openassessment/templates/openassessmentblock/oa_submission_answer.html:7
 msgid "The question for this section."
@@ -855,7 +855,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/student_training/student_training.html:16
 #, python-format
 msgid "available <span class=\"date\">%(start_date)s (in %(time_until)s)</span>"
-msgstr ""
+msgstr "հասանելի է <span class=\"date\">%(start_date)s (in %(time_until)s)</span>"
 
 #. Translators: This string displays a date to the user, then tells them the
 #. time until that date.  Example: "due August 13th, 2014 (in 5 days and 45
@@ -1155,7 +1155,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/self/oa_self_closed.html:13
 #: openassessment/templates/openassessmentblock/student_training/student_training_closed.html:13
 msgid "Incomplete"
-msgstr ""
+msgstr "Չավարտված"
 
 #: openassessment/templates/openassessmentblock/response/oa_response_closed.html:25
 msgid ""
@@ -1171,7 +1171,7 @@ msgstr ""
 #: openassessment/xblock/staff_assessment_mixin.py:109
 #: openassessment/xblock/staff_assessment_mixin.py:127
 msgid "Complete"
-msgstr ""
+msgstr "Ավարտված"
 
 #: openassessment/templates/openassessmentblock/response/oa_response_graded.html:28
 #: openassessment/templates/openassessmentblock/response/oa_response_submitted.html:49
@@ -1250,7 +1250,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:87
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:169
 msgid "Close"
-msgstr ""
+msgstr "Փակել"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:26
 msgid "Enter an individual learner's username or email"
@@ -1258,7 +1258,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:29
 msgid "Submit"
-msgstr ""
+msgstr "հաստատել"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:40
 msgid "Classifier set"
@@ -1270,7 +1270,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:43
 msgid "Value"
-msgstr ""
+msgstr "Արժեք"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:47
 msgid "Created at"
@@ -1282,7 +1282,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:55
 msgid "Course ID"
-msgstr ""
+msgstr "Դասընթացի ID"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:59
 msgid "Item ID"
@@ -1306,7 +1306,7 @@ msgstr ""
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:102
 msgid "Location"
-msgstr ""
+msgstr "Գտնվելու վայրը"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_area.html:108
 msgid "Learner Progress"
@@ -1364,7 +1364,7 @@ msgstr ""
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_grade_learners_assessment.html:47
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_override_assessment.html:46
 msgid "Submit assessment"
-msgstr ""
+msgstr "Հաստատել գնահատումը"
 
 #: openassessment/templates/openassessmentblock/staff_area/oa_staff_grade_learners_assessment.html:53
 msgid "Submit assessment and continue grading"
@@ -1650,11 +1650,11 @@ msgstr ""
 #: openassessment/xblock/student_training_mixin.py:55
 #: openassessment/xblock/student_training_mixin.py:203
 msgid "An unexpected error occurred."
-msgstr ""
+msgstr "Անսպասելի սխալ է տեղի ունեցել:"
 
 #: openassessment/xblock/grade_mixin.py:165
 msgid "Peer Assessment"
-msgstr ""
+msgstr "Դասընկերների գնահատում"
 
 #: openassessment/xblock/grade_mixin.py:167
 msgid "Self Assessment"
@@ -1713,7 +1713,7 @@ msgstr ""
 
 #: openassessment/xblock/grade_mixin.py:498
 msgid "Peer"
-msgstr ""
+msgstr "Դասընկեր"
 
 #: openassessment/xblock/peer_assessment_mixin.py:56
 msgid "You must submit a response before you can perform a peer assessment."
@@ -1775,7 +1775,7 @@ msgstr ""
 
 #: openassessment/xblock/resolve_dates.py:226
 msgid "The start date '{start}' cannot be later than the due date '{due}'"
-msgstr ""
+msgstr "Սկսման ամսաթիվը '{start}' չի կարող վերջնաժամկետից '{due}' ուշ լինել"
 
 #: openassessment/xblock/self_assessment_mixin.py:124
 msgid "You must submit a response before you can perform a self-assessment."

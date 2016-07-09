@@ -1,0 +1,28 @@
+Different tags in source and translation
+  msgid: Example {example_number} has an invalid option for "{criterion_name}":
+         "{option_name}"
+  -----> Ví dụ {} example_number có một tùy chọn không hợp lệ cho
+         "{criterion_name} ": "{option_name} "
+  -----> "{example_number}" missing
+
+Different tags in source and translation
+  msgid: Example {example_number} has an extra option for "{criterion_name}"
+  -----> Ví dụ {} example_number có một tùy chọn thêm cho "{criterion_name} "
+  -----> "{example_number}" missing
+
+Different tags in source and translation
+  msgid: Example {example_number} is missing an option for "{criterion_name}"
+  -----> Ví dụ {example_numer} đang bị mất một lựa chọn cho "{criterion_name}"
+  -----> "{example_number}" vs "{example_numer}"
+
+Different tags in source and translation
+  msgid: available <span class="date">%(start_date)s (in %(time_until)s)</span>
+  -----> sẵn <span class="date">%(start_date)s (in %(time_until)s)</ span>
+  -----> "</span>" vs "</ span>"
+
+Different tags in source and translation
+  msgid: due <span class="date">%(due_date)s (in %(time_until)s)</span>
+  -----> do <span class = "date">%(due_date)s (in %(time_until)s) </ span>
+  -----> "<span class="date">", "</span>" vs "</ span>", "<span class =
+         "date">"
+
