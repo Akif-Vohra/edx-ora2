@@ -14,6 +14,9 @@ from .data_conversion import create_rubric_dict
 from .resolve_dates import DISTANT_FUTURE
 from .data_conversion import clean_criterion_feedback, create_submission_dict, verify_assessment_parameters
 
+from openassessment.assessment.worker.grading import send_notification_for_assessment
+from submissions import api as sub_api
+
 logger = logging.getLogger(__name__)
 
 
@@ -105,6 +108,13 @@ class PeerAssessmentMixin(object):
             try:
                 if assessment:
                     self.update_workflow_status(submission_uuid=assessment['submission_uuid'])
+                    student_item = sub_api.get_submission_and_student(assessment['submission_uuid']).get('student_item', None)
+
+                    if student_item:
+                        student_id = student_item.get('student_id', None)
+                        if student_id:
+                            student_email = self.get_user_email(student_id)
+                            send_notification_for_assessment.delay(student_email, 'peer', "{0}".format(self.course_id), "{0}".format(self.scope_ids.usage_id))
                 self.update_workflow_status()
             except AssessmentWorkflowError:
                 logger.exception(

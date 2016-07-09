@@ -8,10 +8,11 @@ from xblock.core import XBlock
 
 from openassessment.assessment.api import staff as staff_api
 from openassessment.workflow import api as workflow_api
+from openassessment.assessment.worker.grading import send_notification_for_assessment
 from openassessment.assessment.errors import (
     StaffAssessmentRequestError, StaffAssessmentInternalError
 )
-
+from submissions import api as sub_api
 from .data_conversion import create_rubric_dict
 from .data_conversion import clean_criterion_feedback, verify_assessment_parameters
 
@@ -41,7 +42,6 @@ class StaffAssessmentMixin(object):
             return {
                 'success': False, 'msg': self._(u"The submission ID of the submission being assessed was not found.")
             }
-
         try:
             assessment = staff_api.create_assessment(
                 data['submission_uuid'],
@@ -54,6 +54,14 @@ class StaffAssessmentMixin(object):
             assess_type = data.get('assess_type', 'regrade')
             self.publish_assessment_event("openassessmentblock.staff_assess", assessment, type=assess_type)
             workflow_api.update_from_assessments(assessment["submission_uuid"], None)
+            
+            student_item = sub_api.get_submission_and_student(data['submission_uuid']).get('student_item', None)
+
+            if student_item:
+                student_id = student_item.get('student_id', None)
+                if student_id:
+                    student_email = self.get_user_email(student_id)
+                    send_notification_for_assessment.delay(student_email, 'staff', "{0}".format(self.course_id), "{0}".format(self.scope_ids.usage_id))
 
         except StaffAssessmentRequestError:
             logger.warning(

@@ -976,6 +976,26 @@ class OpenAssessmentBlock(
                 )
                 return None
 
+    def get_user_email(self, anonymous_user_id):
+        """
+        Return the email of the user associated with anonymous_user_id
+        Args:
+            anonymous_user_id (str): the anonymous user id of the user
+
+        Returns: the username if it can be identified. If the xblock service to converts to a real user
+            fails, returns None and logs the error.
+
+        """
+        if hasattr(self, "xmodule_runtime"):
+            user = self.xmodule_runtime.get_real_user(anonymous_user_id)
+            if user:
+                return user.email
+            else:
+                logger.exception(
+                    "XBlock service could not find user for anonymous_user_id '{}'".format(anonymous_user_id)
+                )
+                return None    
+
     def _adjust_start_date_for_beta_testers(self, start):
         if hasattr(self, "xmodule_runtime"):
             days_early_for_beta = getattr(self.xmodule_runtime, 'days_early_for_beta', 0)

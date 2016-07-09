@@ -14,6 +14,18 @@ from openassessment.assessment.errors import (
 )
 from .algorithm import AIAlgorithm, AIAlgorithmError
 from openassessment.assessment.models.ai import AIGradingWorkflow
+from opaque_keys.edx.keys import CourseKey, UsageKey
+from opaque_keys import InvalidKeyError
+from lms.djangoapps.courseware.url_helpers import get_redirect_url
+from xmodule.modulestore.search import path_to_location, navigation_index
+from xmodule.modulestore.django import modulestore
+from django.core.urlresolvers import reverse
+from django.conf import settings
+from django.core.mail import send_mail
+from django.core.mail import get_connection
+from django.core.mail import EmailMessage
+from django.template import Context
+from django.template.loader import get_template
 
 MAX_RETRIES = 2
 
@@ -22,7 +34,7 @@ logger = get_task_logger(__name__)
 # If the Django settings define a low-priority queue, use that.
 # Otherwise, use the default queue.
 RESCHEDULE_TASK_QUEUE = getattr(settings, 'LOW_PRIORITY_QUEUE', None)
-
+GRADING_TASK_QUEUE = getattr(settings, 'LOW_PRIORITY_QUEUE', None)
 
 @task(max_retries=MAX_RETRIES)  # pylint: disable=E1102
 @dog_stats_api.timed('openassessment.assessment.ai.grade_essay.time')
@@ -336,3 +348,59 @@ def _log_complete_reschedule_grading(course_id=None, item_id=None, seconds=-1, s
         msg += u" At least one grading task failed due to internal error."
     msg.format(cid=course_id, iid=item_id, s=seconds)
     logger.info(msg)
+
+
+@task(queue=GRADING_TASK_QUEUE)
+def send_notification_for_assessment(student_email, assess_type, course_id, usage_id, data={}):
+    
+    try:
+        # Returns a subclass of UsageKey, depending on what's being parsed.
+        course_key = CourseKey.from_string(str(course_id))
+        usage_key = UsageKey.from_string(usage_id)
+        path = path_to_location(modulestore(), usage_key, full_path=True)
+       
+        n = len(path)
+        course_id = path[0].course_key
+        # pull out the location names
+        chapter = path[1].name if n > 1 else None
+        section = path[2].name if n > 2 else None
+        position = None
+      
+        redirect_url = None
+        
+        if chapter is None:
+            redirect_url = reverse('courseware', args=(unicode(course_key), ))
+        
+        elif section is None:
+            redirect_url = reverse('courseware_chapter', args=(unicode(course_key), chapter))
+
+        elif position is None:
+            redirect_url = reverse(
+                'courseware_section',
+                args=(unicode(course_key), chapter, section)
+            )
+ 
+        else:
+            # Here we use the navigation_index from the position returned from
+            # path_to_location - we can only navigate to the topmost vertical at the
+            # moment
+            redirect_url = reverse('courseware_position', args=(unicode(course_key), chapter, section, navigation_index(position)))
+
+            
+
+        data['redirect_url'] = 'http://' + settings.SITE_NAME  +redirect_url
+        data['assess_type'] = assess_type
+    except:
+        import traceback
+        logger.error(traceback.format_exc())   
+        logger.error("Error fetching course and usage for {0} and {1}".format(course_key, usage_key))
+       # We don't recognize this key
+
+    b = get_connection()
+   
+    template = get_template('openassessmentblock/grading_completed.html')
+    context = Context(data)
+    content = template.render(context)
+    msg = EmailMessage('LYNX Online-Training: Neue Bewertung erhalten', content, settings.DEFAULT_FROM_EMAIL , to=[student_email,])
+    msg.send()
+    
