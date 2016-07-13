@@ -54,14 +54,14 @@ class StaffAssessmentMixin(object):
             assess_type = data.get('assess_type', 'regrade')
             self.publish_assessment_event("openassessmentblock.staff_assess", assessment, type=assess_type)
             workflow_api.update_from_assessments(assessment["submission_uuid"], None)
-            
+            points_earned = assessment['points_earned']
             student_item = sub_api.get_submission_and_student(data['submission_uuid']).get('student_item', None)
 
             if student_item:
                 student_id = student_item.get('student_id', None)
                 if student_id:
                     student_email = self.get_user_email(student_id)
-                    send_notification_for_assessment.delay(student_email, 'staff', "{0}".format(self.course_id), "{0}".format(self.scope_ids.usage_id))
+                    send_notification_for_assessment.delay(student_email, 'staff', "{0}".format(self.course_id), "{0}".format(self.scope_ids.usage_id), {'points_earned' : points_earned})
 
         except StaffAssessmentRequestError:
             logger.warning(
