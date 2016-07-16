@@ -26,6 +26,8 @@ from django.core.mail import get_connection
 from django.core.mail import EmailMessage
 from django.template import Context
 from django.template.loader import get_template
+from openedx.core.djangoapps.content.course_structures.models import CourseStructure
+from openedx.core.djangoapps.content.course_overviews.models import CourseOverview
 
 MAX_RETRIES = 2
 
@@ -352,11 +354,18 @@ def _log_complete_reschedule_grading(course_id=None, item_id=None, seconds=-1, s
 
 @task(queue=GRADING_TASK_QUEUE)
 def send_notification_for_assessment(student_email, assess_type, course_id, usage_id, data={}):
-    
+    print data 
     try:
         # Returns a subclass of UsageKey, depending on what's being parsed.
         course_key = CourseKey.from_string(str(course_id))
         usage_key = UsageKey.from_string(usage_id)
+
+        parent_loc = modulestore().get_parent_location(usage_key)
+        cs = CourseStructure.objects.get(course_id=course_key)
+        course_name = CourseOverview.objects.get(pk=course_key).display_name
+        
+        parent_display_name = cs.structure['blocks'][str(parent_loc)]['display_name']
+        
         path = path_to_location(modulestore(), usage_key, full_path=True)
        
         n = len(path)
@@ -390,6 +399,8 @@ def send_notification_for_assessment(student_email, assess_type, course_id, usag
 
         data['redirect_url'] = 'http://' + settings.SITE_NAME  +redirect_url
         data['assess_type'] = assess_type
+        data['parent_display_name'] = parent_display_name
+        data['course_name'] = course_name
     except:
         import traceback
         logger.error(traceback.format_exc())   

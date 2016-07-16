@@ -114,7 +114,7 @@ class PeerAssessmentMixin(object):
                         student_id = student_item.get('student_id', None)
                         if student_id:
                             student_email = self.get_user_email(student_id)
-                            send_notification_for_assessment.delay(student_email, 'peer', "{0}".format(self.course_id), "{0}".format(self.scope_ids.usage_id), {'points_earned' : assessment['points_earned']})
+                            send_notification_for_assessment.delay(student_email, 'peer', "{0}".format(self.course_id), "{0}".format(self.scope_ids.usage_id), {'points_earned' : assessment['points_earned'], 'data' : data})
                 self.update_workflow_status()
             except AssessmentWorkflowError:
                 logger.exception(
